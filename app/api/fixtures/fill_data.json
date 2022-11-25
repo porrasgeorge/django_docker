@@ -1,0 +1,604 @@
+[
+    {
+        "model": "api.plant",
+        "pk": 1,
+        "fields": {
+            "name": "Canalete",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.plant",
+        "pk": 2,
+        "fields": {
+            "name": "Bijagua",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.plant",
+        "pk": 3,
+        "fields": {
+            "name": "Cubujuqui",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.plant",
+        "pk": 4,
+        "fields": {
+            "name": "Pocosol",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.plant",
+        "pk": 5,
+        "fields": {
+            "name": "San Lorenzo",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.plant",
+        "pk": 6,
+        "fields": {
+            "name": "Aguas Zarcas Sitio 1",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.plant",
+        "pk": 7,
+        "fields": {
+            "name": "Aguas Zarcas Sitio 2",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.plant",
+        "pk": 8,
+        "fields": {
+            "name": "Platanar",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.plant",
+        "pk": 9,
+        "fields": {
+            "name": "Chocosuela 1",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.plant",
+        "pk": 10,
+        "fields": {
+            "name": "Chocosuela 2",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.plant",
+        "pk": 11,
+        "fields": {
+            "name": "Chocosuela 3",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.plant",
+        "pk": 12,
+        "fields": {
+            "name": "Esperanza",
+            "description": ""
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 1,
+        "fields": {
+            "plant": 1,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 2,
+        "fields": {
+            "plant": 1,
+            "name": "Unidad 2"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 3,
+        "fields": {
+            "plant": 2,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 4,
+        "fields": {
+            "plant": 2,
+            "name": "Unidad 2"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 5,
+        "fields": {
+            "plant": 3,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 6,
+        "fields": {
+            "plant": 3,
+            "name": "Unidad 2"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 7,
+        "fields": {
+            "plant": 4,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 8,
+        "fields": {
+            "plant": 4,
+            "name": "Unidad 2"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 9,
+        "fields": {
+            "plant": 4,
+            "name": "Unidad Gata"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 10,
+        "fields": {
+            "plant": 5,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 11,
+        "fields": {
+            "plant": 5,
+            "name": "Unidad 2"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 12,
+        "fields": {
+            "plant": 6,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 13,
+        "fields": {
+            "plant": 7,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 14,
+        "fields": {
+            "plant": 7,
+            "name": "Unidad 2"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 15,
+        "fields": {
+            "plant": 8,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 16,
+        "fields": {
+            "plant": 8,
+            "name": "Unidad 2"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 17,
+        "fields": {
+            "plant": 9,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 18,
+        "fields": {
+            "plant": 10,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 19,
+        "fields": {
+            "plant": 10,
+            "name": "Unidad 2"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 20,
+        "fields": {
+            "plant": 11,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 21,
+        "fields": {
+            "plant": 12,
+            "name": "Unidad 1"
+        }
+    },
+    {
+        "model": "api.generator",
+        "pk": 22,
+        "fields": {
+            "plant": 12,
+            "name": "Unidad 2"
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 1,
+        "fields": {
+            "scada_pid": 400914,
+            "generator": 1,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 1
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 2,
+        "fields": {
+            "scada_pid": 400968,
+            "generator": 2,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 1
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 3,
+        "fields": {
+            "scada_pid": 400579,
+            "generator": 3,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 0
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 4,
+        "fields": {
+            "scada_pid": 401132,
+            "generator": 4,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 0
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 5,
+        "fields": {
+            "scada_pid": 400019,
+            "generator": 5,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 0
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 6,
+        "fields": {
+            "scada_pid": 400028,
+            "generator": 6,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 0
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 7,
+        "fields": {
+            "scada_pid": 400681,
+            "generator": 7,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 0
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 8,
+        "fields": {
+            "scada_pid": 400727,
+            "generator": 8,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 0
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 9,
+        "fields": {
+            "scada_pid": 400790,
+            "generator": 9,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 0
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 10,
+        "fields": {
+            "scada_pid": 400527,
+            "generator": 10,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 0
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 11,
+        "fields": {
+            "scada_pid": 400542,
+            "generator": 11,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 0
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 12,
+        "fields": {
+            "scada_pid": 400944,
+            "generator": 12,
+            "name": "Potencia",
+            "description": "",
+            "out_value": 1
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 13,
+        "fields": {
+            "scada_pid": 400942,
+            "generator": 13,
+            "name": "Potencia",
+            "description": "",
+            "out_value": 1
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 14,
+        "fields": {
+            "scada_pid": 400943,
+            "generator": 14,
+            "name": "Potencia",
+            "description": "",
+            "out_value": 1
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 15,
+        "fields": {
+            "scada_pid": 401559,
+            "generator": 15,
+            "name": "Potencia",
+            "description": "",
+            "out_value": 1
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 16,
+        "fields": {
+            "scada_pid": 401560,
+            "generator": 16,
+            "name": "Potencia",
+            "description": "",
+            "out_value": 1
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 17,
+        "fields": {
+            "scada_pid": 400416,
+            "generator": 17,
+            "name": "Potencia",
+            "description": "",
+            "out_value": 1
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 18,
+        "fields": {
+            "scada_pid": 400417,
+            "generator": 18,
+            "name": "Potencia",
+            "description": "",
+            "out_value": 1
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 19,
+        "fields": {
+            "scada_pid": 400418,
+            "generator": 19,
+            "name": "Potencia",
+            "description": "",
+            "out_value": 1
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 20,
+        "fields": {
+            "scada_pid": 400419,
+            "generator": 20,
+            "name": "Potencia",
+            "description": "",
+            "out_value": 1
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 21,
+        "fields": {
+            "scada_pid": 400947,
+            "generator": 21,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 0
+        }
+    },
+    {
+        "model": "api.scadapoint",
+        "pk": 22,
+        "fields": {
+            "scada_pid": 401004,
+            "generator": 22,
+            "name": "Interruptor",
+            "description": "",
+            "out_value": 0
+        }
+    },
+    {
+        "model": "api.priority",
+        "pk": 1,
+        "fields": {
+            "level": 0,
+            "name": "No Sound"
+        }
+    },
+    {
+        "model": "api.priority",
+        "pk": 2,
+        "fields": {
+            "level": 1,
+            "name": "a"
+        }
+    },
+    {
+        "model": "api.priority",
+        "pk": 3,
+        "fields": {
+            "level": 2,
+            "name": "b"
+        }
+    },
+    {
+        "model": "api.priority",
+        "pk": 4,
+        "fields": {
+            "level": 3,
+            "name": "c"
+        }
+    },
+    {
+        "model": "api.priority",
+        "pk": 5,
+        "fields": {
+            "level": 4,
+            "name": "d"
+        }
+    },
+    {
+        "model": "api.priority",
+        "pk": 6,
+        "fields": {
+            "level": 5,
+            "name": "e"
+        }
+    },
+    {
+        "model": "api.priority",
+        "pk": 7,
+        "fields": {
+            "level": 6,
+            "name": "f"
+        }
+    },
+    {
+        "model": "api.priority",
+        "pk": 8,
+        "fields": {
+            "level": 7,
+            "name": "g"
+        }
+    },
+    {
+        "model": "api.priority",
+        "pk": 9,
+        "fields": {
+            "level": 8,
+            "name": "Salidas"
+        }
+    },
+    {
+        "model": "api.priority",
+        "pk": 10,
+        "fields": {
+            "level": 9,
+            "name": "j"
+        }
+    },
+    {
+        "model": "api.priority",
+        "pk": 11,
+        "fields": {
+            "level": 10,
+            "name": "k"
+        }
+    }
+]
