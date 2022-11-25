@@ -75,9 +75,20 @@ DATABASES = {
         'NAME': os.environ.get('DB_NAME'),
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASS'),
-    }
-}
+    },
 
+    "scada": {
+        "ENGINE": "mssql",
+        "NAME": os.environ.get('SCADA_DB_NAME'),
+        "USER": os.environ.get('SCADA_DB_USER'),
+        "PASSWORD": os.environ.get('SCADA_DB_PASS'),
+        "HOST": os.environ.get('SCADA_DB_SERVER'),
+        "PORT": os.environ.get('SCADA_DB_PORT'),
+        "COMMAND_TIMEOUT": 5,
+        "OPTIONS": {"driver": "ODBC Driver 18 for SQL Server", 
+            'extra_params': "Encrypt=no" },
+    },
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -109,7 +120,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

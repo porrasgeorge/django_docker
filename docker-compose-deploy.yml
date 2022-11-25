@@ -14,6 +14,12 @@ services:
       - DB_PASS=${DB_PASS}
       - SECRET_KEY=${SECRET_KEY}
       - ALLOWED_HOSTS=${ALLOWED_HOSTS}
+      - SCADA_DB_NAME=${SCADA_DB_NAME}
+      - SCADA_DB_USER=${SCADA_DB_USER}
+      - SCADA_DB_PASS=${SCADA_DB_PASS}
+      - SCADA_DB_SERVER=${SCADA_DB_SERVER}
+      - SCADA_DB_PORT=${SCADA_DB_PORT}
+
     depends_on:
       - db
 

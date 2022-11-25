@@ -20,6 +20,11 @@ services:
       - DB_NAME=devdb
       - DB_USER=devuser
       - DB_PASS=devpass
+      - SCADA_DB_NAME=${SCADA_DB_NAME}
+      - SCADA_DB_USER=${SCADA_DB_USER}
+      - SCADA_DB_PASS=${SCADA_DB_PASS}
+      - SCADA_DB_SERVER=${SCADA_DB_SERVER}
+      - SCADA_DB_PORT=${SCADA_DB_PORT}
     depends_on:
       - db
 
