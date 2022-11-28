@@ -17,7 +17,7 @@ class Command(BaseCommand):
             scada_cursor = connections['scada'].cursor()
             scada_connected = True
         except OperationalError as e:
-            print(e)
+            self.stdout.write(e)
             scada_connected = False
             self.stdout.write("NO HAY CONEXION CON LA BASE DE DATOS!!")
 
