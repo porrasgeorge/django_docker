@@ -2,7 +2,6 @@ from django.core.management.base import BaseCommand
 from django.db import connections
 from django.db.utils import OperationalError
 from api.models import Alarm, ScadaPoint, Priority
-#from django.utils import timezone
 
 import datetime as dt
 
@@ -25,7 +24,6 @@ class Command(BaseCommand):
             query = f"exec GetAlarms"
             scada_cursor.execute(query)
             filtered_data = [row for row in scada_cursor.fetchall() if row[0] in sps]
-            #print(filtered_data)
             alrm_datalist = []
             for row in filtered_data:
                 sp = ScadaPoint.objects.get(scada_pid=row[0])
@@ -37,8 +35,6 @@ class Command(BaseCommand):
                 if not Alarm.objects.filter(scada_point=sp, date_time=dtime):
                     alrm = Alarm(scada_point=sp, priority=prior, date_time=dtime, status=val)
                     alrm_datalist.append(alrm)
-                    print(alrm)
-            
             Alarm.objects.bulk_create(alrm_datalist)
             #Alarm.objects.all().delete()
 
