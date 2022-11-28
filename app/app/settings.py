@@ -88,9 +88,11 @@ DATABASES = {
         "OPTIONS": {"driver": "ODBC Driver 18 for SQL Server", 
             'extra_params': "Encrypt=no" },
     },
-}
 
+    
+}
 print(DATABASES)
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
