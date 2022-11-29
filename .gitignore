@@ -14,4 +14,4 @@ venv/
 /data
 .env
 
-docker-compose*
+docker-compose.yml
