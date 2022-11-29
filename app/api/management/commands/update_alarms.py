@@ -2,6 +2,7 @@ from django.core.management.base import BaseCommand
 from django.db import connections
 from django.db.utils import OperationalError
 from api.models import Alarm, ScadaPoint, Priority
+import datetime as dt
 
 import datetime as dt
 
@@ -36,6 +37,6 @@ class Command(BaseCommand):
                     alrm = Alarm(scada_point=sp, priority=prior, date_time=dtime, status=val)
                     alrm_datalist.append(alrm)
             Alarm.objects.bulk_create(alrm_datalist)
-            self.stdout.write(f'{len(alrm_datalist)} elements added...')
+            self.stdout.write(f'{dt.datetime.now()} - {len(alrm_datalist)} elements added...')
             #Alarm.objects.all().delete()
 
