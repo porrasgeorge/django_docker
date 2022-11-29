@@ -14,13 +14,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '7l0+mq1qex2!()3@@p')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(int(os.environ.get('DEBUG', 0)))
 
-ALLOWED_HOSTS = []
-ALLOWED_HOSTS.extend(
-    filter(
-        None,
-        os.environ.get('ALLOWED_HOSTS', '').split(','),
-    )
-)
+ALLOWED_HOSTS = ['192.168.3.66', '127.0.0.1', 'localhost']
+# ALLOWED_HOSTS.extend(
+#     filter(
+#         None,
+#         os.environ.get('ALLOWED_HOSTS', '').split(','),
+#     )
+# )
 
 # Application definition
 
