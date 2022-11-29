@@ -36,5 +36,6 @@ class Command(BaseCommand):
                     alrm = Alarm(scada_point=sp, priority=prior, date_time=dtime, status=val)
                     alrm_datalist.append(alrm)
             Alarm.objects.bulk_create(alrm_datalist)
+            self.stdout.write(f'{len(alrm_datalist)} elements added...')
             #Alarm.objects.all().delete()
 
