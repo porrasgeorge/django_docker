@@ -4,7 +4,6 @@ LABEL maintainer="jporras"
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
-COPY ./app /app
 COPY ./scripts /scripts
 
 WORKDIR /app
