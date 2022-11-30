@@ -10,7 +10,7 @@ class Command(BaseCommand):
     help = "Updates the alarm table"
 
     def handle(self, *args, **kwargs):
-        self.stdout.write("\nUpdate starting.......\n")
+        #self.stdout.write("\nUpdate starting.......\n")
         sps = ScadaPoint.objects.values_list('scada_pid', flat=True)
         scada_connected = False
         try:
@@ -37,6 +37,6 @@ class Command(BaseCommand):
                     alrm = Alarm(scada_point=sp, priority=prior, date_time=dtime, status=val)
                     alrm_datalist.append(alrm)
             Alarm.objects.bulk_create(alrm_datalist)
-            self.stdout.write(f'{dt.datetime.now()} - {len(alrm_datalist)} elements added...')
-            #Alarm.objects.all().delete()
+            if len(alrm_datalist):
+                self.stdout.write(f'{dt.datetime.now()} - {len(alrm_datalist)} elements added...')
 
