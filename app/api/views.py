@@ -42,4 +42,4 @@ class AlarmViewSet(viewsets.ReadOnlyModelViewSet):
             else:
                 raise ValidationError('Invalid parameter "date_time"')
 
-        return query_set
+        return query_set.order_by('-date_time')[:100]
