@@ -4,8 +4,6 @@ from django.db.utils import OperationalError
 from api.models import Alarm, ScadaPoint, Priority
 import datetime as dt
 
-import datetime as dt
-
 class Command(BaseCommand):
     help = "Updates the alarm table"
 
