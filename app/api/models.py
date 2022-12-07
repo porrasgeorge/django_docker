@@ -9,7 +9,7 @@ import datetime as dt
 class Plant(models.Model):
     name = models.CharField(max_length=100, unique=True, default="")
     description = models.TextField(max_length=360, null=True, blank=True)
-    image = models.FileField(default="")
+    ##image = models.FileField(default="")
     def __str__(self):
         return f'{self.name}'
 
