@@ -17,7 +17,7 @@ class Generator(models.Model):
     plant = models.ForeignKey(Plant, related_name='generators', on_delete=models.PROTECT)
     name = models.CharField(max_length=100)
     def __str__(self):
-        return f'{self.name}'
+        return f'{self.plant} - {self.name}'
     class Meta:
         unique_together = ('plant', 'name')
         index_together = ['plant', 'name']
@@ -29,7 +29,7 @@ class ScadaPoint(models.Model):
     description = models.TextField(max_length=360, null=True, blank=True)
     out_value = models.IntegerField(null=False, default=0)
     def __str__(self):
-        return f'{self.name} ({self.scada_pid})'
+        return f'{self.generator} - {self.name} ({self.scada_pid})'
 
 class Priority(models.Model):
     level = models.SmallIntegerField(validators=[MinValueValidator(0), MaxValueValidator(10)])
